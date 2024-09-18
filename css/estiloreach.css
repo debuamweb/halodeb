@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+/* el asterisco afecta a todo el codigo fuente */
+
+/* Formato general fondo y texto */
+body {background: url("../img/fondo.png") rgba(76, 175, 80, 0.5);
+background-repeat: no-repeat; background-size: cover; background-attachment: fixed; 
+text-align: center; color: aliceblue; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+cursor: url("../img/cursor.png"),auto;}
+
+/* Formato del Wrap */
+.wrap {background-color: rgba(10,1,33,0.5); width: 1000px; margin-right: auto; margin-left: auto; text-align: center; padding: 10px; box-sizing: border-box;}
+
+/* Formato del Menú */
+.nav {height: 340px; width: 1000px; margin-left: auto; margin-right: auto; text-align: center; align-content: center;}
+
+.nav ul{list-style-type: none;}
+
+.nav li{width: 200px; float: left; line-height: 50px;}
+
+a{color:aliceblue; text-decoration: none;font-size: 20px;}
+
+a:hover{color:#35CAEF; padding: 10px; font-size: 175%; text-decoration: none;}
+
+
+/* modificacion para que el 1er elemento no tenga la linea */
+
+#navizq {border-left: none;}
+
+.section {width: 700px; background-color: rgba(248,177,44,0.5); padding: 70px;  margin-left: auto;
+	margin-right: auto; text-align: center; margin-bottom: 50px; margin-top: 50px; align-content: center;}
+
+.section img{width: auto; height: 300px;cursor: pointer;}
+
+.section p {text-align: justify; font-family:"Anonymous Pro", monospace;font-size:125%;cursor: text;}
+h2{color: skyblue; font-family:halofont; font-size:500%;}
+
+/*font-face permite agregar fuentes externas, src la busca font family le da nombre*/
+@font-face{src: url("../src/halofont/Halo.ttf");font-family:halofont;}
+
+
+/* Posición de las imágenes*/
+
+#s1 {position:absolute; left: 300px; top: 925px;}
+
+#s2 {position:relative; left: 300px;}
+
+#s3 {position:relative; right: 500px;}
+
+#s4 {position:relative; left: 300px;}
+
+#s5 {position:relative; right: 500px;}
+
+/* Transformación de las imágenes*/
+
+#s1:hover {transform: translate(140px,50px); transition:linear 2.33s;}
+/*translate mueve en diagonal, transicion linear no tiene flexibilizacion, es constante*/
+
+#s2:hover {transform: translate(-240px,0px) rotateY(720deg); transition:ease-in 2.33s;}
+/*rotate va en grados (deg), ease-in va de lento a rapido*/
+
+#s3:hover {transform: skewX(75deg); transition:ease-out 5.33s;}
+/*skew va en grados (deg), ease-out va de rapido a lento*/
+
+#s4:hover {transform: rotateX(180deg) scale(0.20); transition:ease-in 2s;}
+/*skew va en grados (deg), ease-out va de rapido a lento*/
+
+#s5:hover {transform: scale(2); transition:ease 4s;}
+/*skew va en grados (deg), ease-out va de rapido a lento*/
+
+/*posición del botón Home*/
+#homebutton {position: fixed;right: 60px; top: 50px;cursor: crosshair;}
+
+/* estilo del footer*/
+.footer {background-color: rgba(34,64,9,1.00); width: 700px; line-height: 50px; height: 150px; margin-right: auto; margin-left: auto; text-align: center; color:rgba(118,252,221,1.00);}
+
+/* imagen título página*/
+.wphome { height: 150px; justify-content: center; align-content: center; margin: 10px auto;}
+
